@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các ví dụ Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-center text-gray-800">Các ví dụ Tailwind CSS</h1>
+
+        <!-- Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">1. Buttons (Nút bấm)</h2>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Primary
+                </button>
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    Success
+                </button>
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Danger
+                </button>
+                <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                    Warning
+                </button>
+                <button class="border border-gray-400 hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 rounded">
+                    Outline
+                </button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">
+                    Rounded
+                </button>
+                <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    Large Shadow
+                </button>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">2. Cards (Thẻ)</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gradient-to-r from-blue-400 to-blue-600 h-48"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Card tiêu đề</h3>
+                        <p class="text-gray-700">Đây là nội dung của card. Tailwind giúp styling dễ dàng.</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                            Xem thêm
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-r from-green-400 to-green-600 h-48"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Card với hover</h3>
+                        <p class="text-gray-700">Di chuột vào để thấy hiệu ứng shadow.</p>
+                        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                            Tìm hiểu
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Card gradient</h3>
+                        <p class="text-gray-700">Background gradient đẹp mắt với Tailwind.</p>
+                        <button class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
+                            Chi tiết
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forms -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">3. Forms (Biểu mẫu)</h2>
+            <form class="space-y-4 max-w-md">
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">Input thường</label>
+                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập text...">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">Select dropdown</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Tùy chọn 1</option>
+                        <option>Tùy chọn 2</option>
+                        <option>Tùy chọn 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">Textarea</label>
+                    <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập nội dung..."></textarea>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                    <label class="ml-2 text-gray-700">Đồng ý với điều khoản</label>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+                    Gửi
+                </button>
+            </form>
+        </section>
+
+        <!-- Alerts -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">4. Alerts (Thông báo)</h2>
+            <div class="space-y-4">
+                <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded">
+                    <p class="font-bold">Info</p>
+                    <p>Đây là thông báo thông tin.</p>
+                </div>
+                <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded">
+                    <p class="font-bold">Success</p>
+                    <p>Thao tác thành công!</p>
+                </div>
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded">
+                    <p class="font-bold">Warning</p>
+                    <p>Cảnh báo: Hãy kiểm tra lại thông tin.</p>
+                </div>
+                <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded">
+                    <p class="font-bold">Error</p>
+                    <p>Có lỗi xảy ra. Vui lòng thử lại.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">5. Badges (Huy hiệu)</h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Primary</span>
+                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Success</span>
+                <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Danger</span>
+                <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Warning</span>
+                <span class="bg-gray-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Gray</span>
+                <span class="bg-purple-500 text-white px-3 py-1 rounded text-sm font-semibold">Square</span>
+                <span class="border border-blue-500 text-blue-500 px-3 py-1 rounded-full text-sm font-semibold">Outline</span>
+            </div>
+        </section>
+
+        <!-- Responsive Grid -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">6. Responsive Grid (Lưới responsive)</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="bg-blue-500 text-white p-4 rounded text-center">1</div>
+                <div class="bg-green-500 text-white p-4 rounded text-center">2</div>
+                <div class="bg-red-500 text-white p-4 rounded text-center">3</div>
+                <div class="bg-yellow-500 text-white p-4 rounded text-center">4</div>
+                <div class="bg-purple-500 text-white p-4 rounded text-center">5</div>
+                <div class="bg-pink-500 text-white p-4 rounded text-center">6</div>
+                <div class="bg-indigo-500 text-white p-4 rounded text-center">7</div>
+                <div class="bg-gray-500 text-white p-4 rounded text-center">8</div>
+            </div>
+            <p class="mt-4 text-gray-600 text-sm">
+                Thay đổi kích thước trình duyệt để thấy grid thay đổi: 
+                <br>Mobile: 1 cột | Tablet: 2 cột | Desktop: 3-4 cột
+            </p>
+        </section>
+
+        <!-- Flexbox Examples -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">7. Flexbox</h2>
+            <div class="space-y-4">
+                <div class="flex justify-between items-center bg-gray-100 p-4 rounded">
+                    <span>Left</span>
+                    <span>Center</span>
+                    <span>Right</span>
+                </div>
+                <div class="flex justify-center items-center bg-gray-100 p-4 rounded">
+                    <span class="bg-blue-500 text-white px-4 py-2 rounded">Centered</span>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 bg-gray-100 p-4 rounded">
+                    <div class="flex-1 bg-blue-500 text-white p-4 rounded text-center">Flex 1</div>
+                    <div class="flex-1 bg-green-500 text-white p-4 rounded text-center">Flex 1</div>
+                    <div class="flex-1 bg-red-500 text-white p-4 rounded text-center">Flex 1</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing Examples -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">8. Spacing (Khoảng cách)</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-200 p-2 rounded">padding: p-2</div>
+                <div class="bg-gray-200 p-4 rounded">padding: p-4</div>
+                <div class="bg-gray-200 p-8 rounded">padding: p-8</div>
+                <div class="space-x-4">
+                    <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded">mx-4</span>
+                    <span class="inline-block bg-green-500 text-white px-4 py-2 rounded">mx-4</span>
+                    <span class="inline-block bg-red-500 text-white px-4 py-2 rounded">mx-4</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shadow & Border -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">9. Shadow & Border</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-sm border rounded">
+                    <p class="font-semibold">shadow-sm</p>
+                    <p class="text-gray-600">Shadow nhỏ</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded">
+                    <p class="font-semibold">shadow-md</p>
+                    <p class="text-gray-600">Shadow trung bình</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded">
+                    <p class="font-semibold">shadow-lg</p>
+                    <p class="text-gray-600">Shadow lớn</p>
+                </div>
+                <div class="bg-white p-6 border-2 border-blue-500 rounded">
+                    <p class="font-semibold">border-blue-500</p>
+                    <p class="text-gray-600">Border màu xanh</p>
+                </div>
+                <div class="bg-white p-6 border-4 border-red-500 rounded-lg">
+                    <p class="font-semibold">border-4 rounded-lg</p>
+                    <p class="text-gray-600">Border dày</p>
+                </div>
+                <div class="bg-white p-6 shadow-2xl rounded-xl">
+                    <p class="font-semibold">shadow-2xl</p>
+                    <p class="text-gray-600">Shadow cực lớn</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gradients -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-700">10. Gradients</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-lg">
+                    <p class="font-bold">from-blue-500 to-purple-600</p>
+                </div>
+                <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white p-8 rounded-lg">
+                    <p class="font-bold">from-green-400 to-blue-500</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-500 to-yellow-500 text-white p-8 rounded-lg">
+                    <p class="font-bold">from-pink-500 to-yellow-500</p>
+                </div>
+                <div class="bg-gradient-to-tl from-red-500 to-yellow-500 text-white p-8 rounded-lg">
+                    <p class="font-bold">from-red-500 to-yellow-500</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
